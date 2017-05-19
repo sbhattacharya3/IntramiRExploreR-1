@@ -1,0 +1,31 @@
+Package: IntramiRExploreR
+Title: Predicting Targets for Drosophila Intragenic miRNAs
+Version: 0.99.8
+Author: Surajit Bhattacharya and Daniel Cox
+Maintainer: Surajit Bhattacharya <sbhattacharya3@student.gsu.edu>
+Description: Intra-miR-ExploreR, an integrative miRNA target prediction
+        bioinformatics tool, identifies targets combining expression
+        and biophysical interactions of a given microRNA (miR). Using
+        the tool, we have identified targets for 92 intragenic miRs in
+        D. melanogaster, using available microarray expression data,
+        from Affymetrix 1 and Affymetrix2 microarray array platforms,
+        providing a global perspective of intragenic miR targets in
+        Drosophila. Predicted targets are grouped according to
+        biological functions using the DAVID Gene Ontology tool and are
+        ranked based on a biologically relevant scoring system,
+        enabling the user to identify functionally relevant targets for
+        a given miR.
+Depends: R (>= 3.4)
+Imports: igraph (>= 1.0.1), FGNet (>= 3.0.7), knitr (>= 1.12.3), stats,
+        utils, grDevices, graphics
+Suggests: RDAVIDWebService, gProfileR, topGO, KEGGprofile,
+        org.Dm.eg.db, rmarkdown, testthat
+VignetteBuilder: knitr
+License: GPL-2
+biocViews: Software, Microarray, GeneTarget, StatisticalMethod,
+        GeneExpression, GenePrediction
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+URL: https://github.com/sbhattacharya3/IntramiRExploreR/
+BugReports: https://github.com/sbhattacharya3/IntramiRExploreR/issues
